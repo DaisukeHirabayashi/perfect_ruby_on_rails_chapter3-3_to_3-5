@@ -11,6 +11,9 @@ module DbSample
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    config.actice_record.writing_role = :writable
+    config.active_record.reading_role = :readonly
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
